@@ -3,9 +3,9 @@
   hosts: [web]
   vars:
     course: "Devops"
-    trainer: "susmi"
-    duration: "10HRS"
+    trainer: "Susmi"
+    duration: "10HRs"
   tasks:
   - name: check variables
     ansible.builtin.debug:
-      msg: "hi  i am learning {{course}}, trainer{{susmi}}, duration{{HRS}}"
+      msg: "hi  i am learning {{course}}, trainer{{trainer}}, duration{{duration}}"
