@@ -1,0 +1,11 @@
+- name: Variables
+  become: yes
+  hosts: [web]
+  vars:
+    course: "Devops"
+    trainer: "susmi"
+    duration: "10HRS"
+  tasks:
+  - name: check variables
+    ansible.builtin.debug:
+      msg: "hi  i am learning {{course}}, trainer{{susmi}}, duration{{HRS}}"

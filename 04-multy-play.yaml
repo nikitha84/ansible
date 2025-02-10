@@ -1,0 +1,6 @@
+- name: Play-1
+  become: yes
+  hosts: [web]
+  tasks:
+  - name: Play-1
+  
